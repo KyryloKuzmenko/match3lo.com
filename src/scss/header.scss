@@ -1,15 +1,67 @@
+.header-section {
+    position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.header-section .header-content-wrap {
+  backdrop-filter: blur(10px);
+  background: rgba(21, 30, 49, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  @include media(desktop) {
+    height: 68px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.header-logo {
+  width: 40px;
+  height: 44px;
+}
+
+.burger-menu,
+.close-menu {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.burger-menu.hidden,
+.close-menu.hidden {
+  display: none;
+}
+
+.burger-menu {
+  width: 40px;
+  height: 40px;
+  @include media(desktop) {
+    display: none;
+  }
+}
 
 .backdrop {
   position: fixed;
-  top: 75px;
+  top: 60px;
   left: 0;
   right: 0;
   height: 100%;
   margin: 0 auto;
   z-index: 1001;
-  background: #f6f6f6;
   opacity: 0;
   visibility: hidden;
+  background-image: url('../img/mobile/backdrop-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .backdrop.show {
@@ -17,4 +69,35 @@
   visibility: visible;
   display: flex;
   justify-content: center;
+}
+
+.backdrop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.backdrop-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #adc7d3;
+}
+
+.header-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #adc7d3;
 }

@@ -1,0 +1,70 @@
+.home-content-wrap {
+  background-image: url('../img/mobile/hero-section.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 748px;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    background-image: url('../img/desktop/hero-section-desktop.png');
+  }
+}
+
+.home-content {
+  margin-top: 145px;
+  @include media(desktop) {
+    width: 540px;
+    margin-top: 190px;
+  }
+}
+
+.home-title {
+  @include media(desktop) {
+    font-size: 62px;
+  }
+}
+
+.hero-text {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #adc7d3;
+  @include media(desktop) {
+    margin-top: 32px;
+    font-size: 16px;
+    width: 500px;
+  }
+}
+
+.hero-link {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 20px;
+
+  height: 48px;
+  background: #f8b93f;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151e31;
+  @include media(desktop) {
+    margin-top: 50px;
+    width: 212px;
+    height: 48px;
+  }
+}
+
+.hero-link:hover {
+  background: #ea9a00;
+}
+.hero-link:active {
+  background: #ea9a00;
+}

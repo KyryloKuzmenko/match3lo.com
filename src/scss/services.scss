@@ -1,0 +1,146 @@
+.services-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    flex-direction: row;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 32px;
+    
+  }
+}
+
+.services-block-1 {
+  @include media(desktop) {
+    width: 508px;
+    height: 520px;
+  }
+}
+
+.services-block-2 {
+  @include media(desktop) {
+    max-width: 724px;
+    max-height: 507px;
+    width: 100%;
+    height: auto;
+
+    background-image: url('../img/desktop/services-block-2-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.services-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #13511f;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.services-title {
+  margin-top: 8px;
+}
+.services-text-1 {
+  margin-top: 24px;
+}
+
+.services-text-1,
+.services-text-2,
+.services-text-3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #57616a;
+  margin-bottom: 8px;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.services-link {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 20px;
+
+  height: 48px;
+  background: #f8b93f;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151e31;
+  @include media(desktop) {
+    width: 170px;
+height: 48px;
+  }
+}
+
+.services-link:hover {
+  background: #ea9a00;
+}
+
+.services-link:hover {
+  background: #ea9a00;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 32px;
+}
+
+.services-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 8px 8px 20px 0 rgba(45, 45, 45, 0.08);
+  background: #d8f6ee;
+  @include media(desktop) {
+    width: 400px;
+  }
+}
+
+.services-list-item-2 {
+ @include media(desktop) {
+  margin-left: 24px;
+ }
+}
+.services-list-item-3 {
+ @include media(desktop) {
+  margin-left: 48px;
+ }
+}
+
+.services-span {
+  font-weight: 600;
+}
+
+.services-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #151e31;
+}
+
+.services-img {
+  margin-top: 32px;
+  @include media(desktop) {
+    display: none;
+  }
+}

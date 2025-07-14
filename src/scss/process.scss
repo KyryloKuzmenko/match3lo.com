@@ -1,0 +1,134 @@
+.process-content-wrap {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/mobile/process-bg.png');
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url('../img/desktop/process-bg-desktop.png');
+    background-size: cover;
+    background-position: -80px;
+  }
+}
+
+.process-top-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #adc7d3;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.process-title {
+  color: #d8f6ee;
+  margin-top: 8px;
+}
+
+.process-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #adc7d3;
+  margin-top: 24px;
+  @include media(desktop) {
+    font-size: 16px;
+    width: 616px;
+  }
+}
+
+.process-list {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.process-list-item {
+  display: flex;
+}
+
+.process-list-box {
+  border-bottom: 0.5px solid #adc7d3;
+  padding: 16px 0px;
+  height: 129px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  @include media(desktop) {
+    border-bottom: 0.5px solid #adc7d3;
+    padding: 16px 0px;
+    width: 616px;
+  }
+}
+
+.process-step {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #d8f6ee;
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.process-list-item-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: #d8f6ee;
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.process-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d8f6ee;
+  margin-top: 16px;
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.process-link {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 48px;
+  background: #f8b93f;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151e31;
+  @include media(desktop) {
+    width: 154px;
+    height: 48px;
+    margin-top: 50px;
+  }
+}
+
+.process-link:hover {
+  background: #ea9a00;
+}
+.process-link:active {
+  background: #ea9a00;
+}
+
+.process-img {
+  margin-top: 32px;
+  @include media(desktop) {
+    display: none;
+  }
+}

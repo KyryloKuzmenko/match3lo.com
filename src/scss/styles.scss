@@ -1,17 +1,45 @@
 @import './header.scss';
+@import './home.scss';
+@import './services.scss';
+@import './process.scss';
+@import './portfolio.scss';
+@import './contact.scss';
+@import './target.scss';
+@import './cookies-modal.scss';
 @import './footer.scss';
 @import './cpt.scss';
-
 
 .container {
   max-width: 375px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-
+  background-color: #eefffa;
   @include media(desktop) {
     max-width: 1440px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 88px;
+    padding-right: 88px;
   }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: #1e1e1e;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #d8f6ee;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #151e31;
 }
