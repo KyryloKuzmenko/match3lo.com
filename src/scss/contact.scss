@@ -1,0 +1,113 @@
+.contact-content-wrap {
+  background-image: url('../img/mobile/contact-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/contact-bg-desktop.png');
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.contact-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #adc7d3;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.contact-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #d8f6ee;
+  margin-top: 8px;
+}
+
+.contact-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #adc7d3;
+  margin-top: 8px;
+  @include media(desktop) {
+    font-size: 16px;
+    width: 616px;
+  }
+}
+
+.contact-company {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #adc7d3;
+  margin-top: 8px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.contact-item {
+  background: #d8f6ee;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 24px 16px;
+  @include media(desktop) {
+    width: 100%;
+  }
+}
+
+.contact-item-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #232323;
+  margin-bottom: 8px;
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.contact-item-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #0048b2;
+  text-decoration: none;
+}
+
+.contact-item-hash {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-hashtags {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #0048b2;
+  margin: 0;
+}

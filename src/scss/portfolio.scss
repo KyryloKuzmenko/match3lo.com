@@ -1,0 +1,131 @@
+.portfolio-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.portfolio-top-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #13511f;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.portfolio-title {
+  margin-top: 8px;
+}
+
+.portfolio-text {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #57616a;
+  @include media(desktop) {
+    font-size: 16px;
+    width: 616px;
+  }
+}
+
+.portfolio-list {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 132px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.portfolio-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 262px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  padding-bottom: 24px;
+  @include media(desktop) {
+    width: 100%;
+    max-width: 400px;
+    padding: 120px 24px 24px 24px;
+  }
+}
+
+.portfolio-img {
+  width: 175px;
+  height: 180px;
+  position: absolute;
+  top: -100px;
+}
+
+.portfolio-list-item-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #232323;
+}
+
+.portfolio-list-os,
+.portfolio-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  text-align: center;
+  color: #232323;
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.portfolio-list-os {
+  margin-top: 16px;
+}
+
+.portfolio-list-text {
+  margin-top: 8px;
+}
+
+.portfolio-link {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  height: 48px;
+  background: #f8b93f;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151e31;
+  @include media(desktop) {
+    width: 184px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+}
